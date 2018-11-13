@@ -9,6 +9,6 @@ O script necessita de 3 parâmetros:
 
 ### Exemplo de execução:
 
-python split_and_justify.py -c 20 -i inputs/example_input.txt -o example_output.txt
+`python split_and_justify.py -c 20 -i inputs/example_input.txt -o example_output.txt`
 
 No exemplo acima, o texto do arquivo example_input.txt é dividido em linha de no máximo 20 caracteres e a saída justificada é salva em example_output.txt

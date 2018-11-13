@@ -95,18 +95,20 @@ def pretty_print(result_dict, sub, post_count):
 	message = ""
 	if post_count > 0:
 
-		message += "\nThreads bombando no momento em %s\n" % sub
+		message += "\n*Threads bombando no momento em %s*\n" % sub
 		for index in range(0, post_count):
-			message += "\n\tTitulo: %s\n" % result_dict['title'][index]
-			message += "\tUpvotes: %s\n" % result_dict['upvotes'][index]
-			message += "\tLink: %s\n" % result_dict['link'][index]
-			message += "\tLink para comentarios: %s\n" % result_dict['comment_link'][index]
+			message += "\n*Titulo:* %s\n" % result_dict['title'][index]
+			message += "*Upvotes:* %s\n" % result_dict['upvotes'][index]
+			message += "[Link da postagem](%s)\n" % result_dict['link'][index]
+			message += "[Link para comentarios](%s)\n" % result_dict['comment_link'][index]
 		message += "**************************************************************\n"
 
 	else:
-		message += "\nNada foi encontrado para %s :(\n" % sub
+		message += "\n*Nada foi encontrado para %s :(*\n" % sub
 
 	return message
+
+
 
 if __name__ == "__main__":
 
